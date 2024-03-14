@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+}
+  
+.lenis.lenis-smooth {
+ scroll-behavior: auto !important;
+}
+  
+.lenis.lenis-smooth [data-lenis-prevent] {
+ overscroll-behavior: contain;
+}
+  
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+  
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+  
+.one{
+    height: 100dvh;
+    width: 100vw;
+    background: linear-gradient(360deg, rgb(222, 124, 44), orange);
+}
+
+nav{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    /* background-color: black; */
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+    position: fixed;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 1.5em;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.links ul li{
+    list-style: none;
+    position: relative;
+}
+
+.links ul li::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: all ease-in-out 0.4s;
+}
+
+.links ul li:hover::before{
+    width: 100%;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+   position: relative;
+   height: 1px;
+   width: 20px;
+   background-color: #fff;
+   cursor: pointer;
+}
+.menu::after, .menu::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.menu::before{
+    top: 5px;
+}
+.menu::after{
+   bottom: 5px;
+}
+
+/* hero */
+
+.hero{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.main > h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 18rem;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+#fanta{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25rem;
+    z-index: 3;
+}
+
+#lemon-cut{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 2;
+    height: 18rem;
+}
+#orange{
+    position: absolute;
+    top: 65%;
+    left: 52%;
+    z-index: 4;
+    height: 11rem;
+}
+
+#leaf-one{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    height: 10rem;
+    rotate: 60deg;
+    z-index: 2;
+}
+#leaf-two{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: rotate(100deg);
+    height: 10rem;
+    z-index: 2;
+}
+#leaf-three{
+    position: absolute;
+    top: 13%;
+    left: 70%;
+    transform: rotate(-80deg);
+    height: 13rem;
+    z-index: 2;
+}
+#leaf-four{
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    transform: rotate(40deg);
+    height: 13rem;
+    z-index: 2;
+}
+
+/* second section  */
+
+.two{
+    height: 100dvh;
+    width: 100dvw;
+    background: #45171d;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left, .right{
+    height: 90%;
+    width: 45%;
+    /* border: 1px solid white; */
+    position: relative;
+}
+.left > svg{
+    position: absolute;
+    height: 30rem;
+    top: 25%;
+    left: 5%;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.right > h1{
+    margin-top: 6rem;
+    align-self: flex-start;
+    font-size: 6rem;
+    margin-bottom: -1rem;
+    z-index: 9;
+}
+.right > p{
+    margin-top: 1rem;
+    margin-right: 6rem;
+    font-size: 16px;
+    line-height: 150%;
+    word-spacing: 0.2rem;
+    z-index: 9;
+}
+
+.right > button{
+    align-self: flex-start;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10rem;
+    background-color: rgb(222, 124, 44);
+    cursor: pointer;
+    transition: box-shadow ease-in-out 0.4s;
+}
+.right > button:hover{
+    box-shadow: rgb(222, 124, 44) 0px 0px 18px 0px;
+}
+
+/* third section  */
+
+.three{
+    height: 100dvh;
+    width: 100dvw;
+    background: #45171d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.card{
+    margin-top: 10rem;
+    height: 25rem;
+    width: 15rem;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#card-lemon{
+    position: absolute;
+    top: -20%;
+    z-index: 1;
+    height: 15rem;
+}
+#sprite{
+    position: absolute;
+    height: 18rem;
+    top: 0;
+    z-index: 2;
+}
+.card > h1{
+    color: white;
+    position: absolute;
+    bottom: 15%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.card > button{
+    position: absolute;
+    bottom: 5%;
+    padding: 0.6rem 3rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: box-shadow ease-in-out 0.4s;
+}
+
+
+.card:nth-child(1){
+    background-color: rgb(26, 196, 26);
+}
+
+.card:nth-child(2){
+    background-color: rgb(222, 124, 44);
+}
+.card:nth-child(3){
+    background-color: rgb(24, 113, 208);
+}
+
+.btn1{
+    color: rgb(26, 196, 26);
+}
+.btn1:hover{
+    box-shadow: green 0px 0px 20px 0px;
+}
+
+.btn2{
+    color: rgb(222, 124, 44);
+}
+.btn2:hover{
+    box-shadow: orange 0px 0px 20px 0px;
+}
+.btn3{
+    color: rgb(24, 113, 208);
+}
+.btn3:hover{
+    box-shadow: blue 0px 0px 20px 0px;
+}
